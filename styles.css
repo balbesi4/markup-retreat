@@ -1,1 +1,21 @@
-/* Пиши стили тут */
+.star-rating {
+    font-size: 0;
+    direction: rtl;
+    display: inline-block;
+}
+
+.star-rating .star {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    color: transparent;
+    background: url('img/star-empty.svg') center no-repeat;
+    background-size: contain;
+}
+
+.star-rating .star:hover,
+.star-rating .star:hover ~ .star {
+    color: transparent;
+    background: url('img/star.svg') center no-repeat;
+    background-size: contain;
+}
